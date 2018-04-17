@@ -18,6 +18,8 @@ class Level:
             if word_list[i] in self.injured_word:
                 try:
                     injured_number = self.spoken_word_to_number(word_list[i - 1])
+                    if (injured_number == death_number) and (death_number != 0):
+                        injured_number = self.spoken_word_to_number(word_list[i+1])
                 except AssertionError:
                     try:
                         injured_number = self.spoken_word_to_number(word_list[i + 1])
@@ -26,6 +28,8 @@ class Level:
             if word_list[i] in self.death_word:
                 try:
                     death_number = self.spoken_word_to_number(word_list[i - 1])
+                    if (injured_number == death_number) and (injured_number != 0):
+                        death_number = self.spoken_word_to_number(word_list[i+1])
                 except AssertionError:
                     try:
                         death_number = self.spoken_word_to_number(word_list[i + 1])
