@@ -7,8 +7,8 @@ import re
 class Level:
     def __init__(self):
         self.injured_word = {'seriously', 'wounded', 'injured', 'critical', 'hurt', 'injuring', 'casualties',
-                             'moderately', 'wounding', 'wounds', 'civilians', 'wound', 'missing', 'least',
-                             'people'}
+                             'moderately', 'wounding', 'wounds', 'civilians', 'wound', 'missing', 
+                             }
         self.death_word = {'kills', 'killing', 'kill', 'dead', 'killed', 'martyrs','die'}
     
     def get_single_tweet_injured_death(self, tweet):
