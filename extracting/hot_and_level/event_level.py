@@ -9,7 +9,7 @@ class Level:
         self.injured_word = {'seriously', 'wounded', 'injured', 'critical', 'hurt', 'injuring', 'casualties',
                              'moderately', 'wounding', 'wounds', 'civilians', 'wound', 'missing', 'least',
                              'people'}
-        self.death_word = {'kills', 'killing', 'kill', 'dead', 'killed', 'martyrs'}
+        self.death_word = {'kills', 'killing', 'kill', 'dead', 'killed', 'martyrs','die'}
     
     def get_single_tweet_injured_death(self, tweet):
         word_list = tweet.lower().split()
