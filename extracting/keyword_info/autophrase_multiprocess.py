@@ -2,7 +2,7 @@ import os
 import shutil
 from subprocess import Popen, PIPE
 
-from config.configure import getcfg
+from config.Configure import getcfg
 import utils.function_utils as fu
 import utils.file_iterator as fi
 import utils.multiprocess_utils as mu
